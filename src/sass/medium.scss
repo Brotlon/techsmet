@@ -1,0 +1,129 @@
+$green-color: rgb(119, 170, 119);
+$gray-color: rgb(169, 169, 169);
+
+
+
+// HEADER
+
+.header {
+    height: 100vh;
+    background-image: url('../img/header_1920.jpg');
+    background-position: 40% 20% !important;
+
+    .wrapper {
+        position: relative;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    &__box {
+        position: absolute;
+        right: 15%;
+        align-items: flex-end;
+    }
+
+    &__heading-box {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    &__heading {
+        font-size: 4.2rem;
+        text-align: right;
+    }
+
+    &__btn {
+        font-size: 3rem;
+    }
+}
+
+
+
+// MAIN - USŁUGI
+
+.services {
+    .container {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+    &__offer-box {
+        margin: 1px;
+        width: 400px;
+    }
+}
+
+
+
+.subsection-heading--mobile {
+    font-size: 3rem;
+}
+
+// MAIN - USŁUGI - OBRÓBKA SKRAWANIEM
+// MAIN - USŁUGI - SPRAWANIE
+// MAIN - USŁUGI - POZOSTAŁE
+
+.machining,
+.welding,
+.others {
+    .wrapper {
+        width: 70%;
+    }
+}
+
+
+
+// MAIN - FIRMA
+
+.business {
+    .wrapper {
+        width: 70%;
+    }
+}
+
+
+
+// MAIN - PARK MASZYNOWY
+
+.machine-park {
+    .container {
+        padding-top: 7rem;
+    }
+
+    .wrapper {
+        width: 75%;
+
+        .underline {
+            margin-bottom: 3rem;
+        }
+
+        table {
+            font-size: 1.5rem;
+
+            tr {
+                td {
+                    padding: 2rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+// MAIN - KONTAKT
+
+.contact {
+    .container {
+        padding-top: 3rem;
+    }
+}
+
+
+// FOOTER
+
+.footer {
+    div {
+        text-align: center;
+    }
+}

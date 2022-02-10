@@ -1,0 +1,188 @@
+$green-color: rgb(119, 170, 119);
+$gray-color: rgb(169, 169, 169);
+
+
+
+html {
+    scroll-padding-top: 51px;
+}
+
+.container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+
+
+// HEADER
+
+.header {
+    background-position: 55% 20% !important;
+
+    &__box {
+        right: 19%;
+    }
+}
+
+
+
+// NAWIGACJA
+
+.navbar {
+    &__burger-btn-box {
+        display: none;
+    }
+
+    &__links-box {
+        display: block;
+        padding: 0.8rem 1.6rem;
+        clip-path: inset(0 0 0 0);
+    }
+
+    &__nav-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__nav-item {
+        &:nth-child(n) {
+            border-top: none;
+        }
+    }
+
+    &__nav-link {
+        display: block;
+        width: auto;
+        padding: .8rem 2.5rem;
+    }
+}
+
+
+
+// MAIN - USŁUGI
+
+.services {
+    &__offer-box {
+        a:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+
+.subsection-heading--mobile {
+    display: none;
+}
+
+.subsection-heading--desktop {
+    display: block;
+    margin-bottom: 1.2rem;
+    font-size: 3rem;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .15);
+    word-spacing: 8px;
+}
+
+.services-img {
+    width: 100%;
+}
+
+// MAIN - USŁUGI - OBRÓBKA SKRAWANIEM
+// MAIN - USŁUGI - SPRAWANIE
+// MAIN - USŁUGI - POZOSTAŁE
+
+.machining,
+.welding,
+.others {
+    .wrapper {
+        flex-direction: row;
+        width: 920px;
+
+        .subsection-box {
+            width: 50%;
+        }
+
+        .box-text {
+            padding-top: 0;
+            padding-left: 4rem;
+        }
+    }
+}
+
+.others {
+    .container {
+        padding-bottom: 12rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .subsection-box:first-of-type {
+        max-height: 260px;
+        overflow: hidden;
+    }
+}
+
+
+
+// MAIN - FIRMA
+
+.business {
+    .container {
+        background-image: url('../img/business_1920.jpg');
+    }
+
+    .wrapper {
+        padding: 4rem 4rem 3rem;
+        width: 70%;
+        max-width: 920px;
+    }
+
+    &__text {
+        margin-bottom: 1.2rem;
+    }
+}
+
+
+
+// MAIN - PARK MASZYNOWY
+
+.machine-park {
+    .container {
+        padding-top: 6rem;
+    }
+
+    .wrapper {
+        width: 70%;
+        max-width: 920px;
+
+        table {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .container {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    .header {
+        height: 80vh;
+    }
+
+    .others {
+        .container {
+            padding-bottom: 16rem;
+        }
+    }
+
+    .gallery {
+        .wrapper {
+            max-width: 1500px;
+        }
+    }
+}
