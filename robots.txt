@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: /dist/img/gallery/
-Disallow: /dist/img/images/
