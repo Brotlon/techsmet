@@ -1,16 +1,11 @@
-$green-color: rgb(119, 170, 119);
-$gray-color: rgb(169, 169, 169);
-
-
-
-// HEADER
+// =======================  HEADER  =======================
 
 .header {
     height: 100vh;
     background-image: url('../img/header_1920.jpg');
     background-position: 40% 20% !important;
 
-    .wrapper {
+    &__wrapper {
         position: relative;
         max-width: 1920px;
         margin: 0 auto;
@@ -39,7 +34,7 @@ $gray-color: rgb(169, 169, 169);
 
 
 
-// MAIN - USŁUGI
+// =======================  MAIN - USŁUGI  =======================
 
 .services {
     .container {
@@ -55,10 +50,6 @@ $gray-color: rgb(169, 169, 169);
 
 
 
-.subsection-heading--mobile {
-    font-size: 3rem;
-}
-
 // MAIN - USŁUGI - OBRÓBKA SKRAWANIEM
 // MAIN - USŁUGI - SPRAWANIE
 // MAIN - USŁUGI - POZOSTAŁE
@@ -66,44 +57,50 @@ $gray-color: rgb(169, 169, 169);
 .machining,
 .welding,
 .others {
-    .wrapper {
+    &__wrapper {
         width: 70%;
+    }
+
+    &__heading {
+        &--mobile {
+            font-size: 3rem;
+        }
     }
 }
 
 
 
-// MAIN - FIRMA
+// =======================  MAIN - O FIRMIE  =======================
 
 .business {
-    .wrapper {
+    &__wrapper {
         width: 70%;
     }
 }
 
 
 
-// MAIN - PARK MASZYNOWY
+// =======================  MAIN - PARK MASZYNOWY  =======================
 
 .machine-park {
     .container {
         padding-top: 7rem;
     }
 
-    .wrapper {
+    .underline {
+        margin-bottom: 3rem;
+    }
+
+    &__wrapper {
         width: 75%;
+    }
 
-        .underline {
-            margin-bottom: 3rem;
-        }
+    &__table {
+        font-size: 1.5rem;
 
-        table {
-            font-size: 1.5rem;
-
-            tr {
-                td {
-                    padding: 2rem;
-                }
+        tr {
+            td {
+                padding: 2rem;
             }
         }
     }
@@ -111,7 +108,7 @@ $gray-color: rgb(169, 169, 169);
 
 
 
-// MAIN - KONTAKT
+// =======================  MAIN - KONTAKT  =======================
 
 .contact {
     .container {
@@ -120,10 +117,10 @@ $gray-color: rgb(169, 169, 169);
 }
 
 
-// FOOTER
+// =======================  FOOTER  =======================
 
 .footer {
-    div {
+    &__box {
         text-align: center;
     }
 }

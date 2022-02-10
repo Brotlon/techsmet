@@ -1,14 +1,10 @@
-$green-color: rgb(119, 170, 119);
-$gray-color: rgb(169, 169, 169);
-
-
 .container {
     padding: 5rem 0;
 }
 
 
 
-// HEADER
+// =======================  HEADER  =======================
 
 .header {
     min-height: 600px;
@@ -40,7 +36,7 @@ $gray-color: rgb(169, 169, 169);
 
 
 
-// MAIN - USŁUGI
+// =======================  MAIN - USŁUGI  =======================
 
 .services {
     &__offer-box {
@@ -50,11 +46,6 @@ $gray-color: rgb(169, 169, 169);
 
 
 
-.subsection-heading--mobile {
-    margin-bottom: .8rem;
-    font-size: 2.8rem;
-}
-
 // MAIN - USŁUGI - OBRÓBKA SKRAWANIEM
 // MAIN - USŁUGI - SPRAWANIE
 // MAIN - USŁUGI - POZOSTAŁE
@@ -62,14 +53,21 @@ $gray-color: rgb(169, 169, 169);
 .machining,
 .welding,
 .others {
-    .wrapper {
+    &__wrapper {
         width: 79%;
+    }
+
+    &__heading {
+        &--mobile {
+            margin-bottom: .8rem;
+            font-size: 2.8rem;
+        }
     }
 }
 
 
 
-// MAIN - FIRMA
+// =======================  MAIN - O FIRMIE  =======================
 
 .business {
     .container {
@@ -77,7 +75,7 @@ $gray-color: rgb(169, 169, 169);
         padding-bottom: 8rem;
     }
 
-    .wrapper {
+    &__wrapper {
         padding-left: 3rem;
         padding-right: 3rem;
         width: 80%;
@@ -86,7 +84,7 @@ $gray-color: rgb(169, 169, 169);
 
 
 
-// MAIN - PARK MASZYNOWY
+// =======================  MAIN - PARK MASZYNOWY  =======================
 
 .machine-park {
     .container {
@@ -94,20 +92,20 @@ $gray-color: rgb(169, 169, 169);
         padding-bottom: 8rem;
     }
 
-    .wrapper {
+    &__wrapper {
         width: 80%;
+    }
 
-        h3 {
-            font-size: 2rem;
-        }
+    &__table-title {
+        font-size: 2rem;
+    }
 
-        table {
-            font-size: 1.4rem;
+    &__table {
+        font-size: 1.4rem;
 
-            tr {
-                td {
-                    padding: 2rem 1rem;
-                }
+        tr {
+            td {
+                padding: 2rem 1rem;
             }
         }
     }
@@ -115,19 +113,19 @@ $gray-color: rgb(169, 169, 169);
 
 
 
-// FOOTER
+// =======================  FOOTER  =======================
 
 .footer {
-    div {
+    &__box {
         text-align: left;
         margin-bottom: 0;
     }
 
-    .footer-line {
+    &__line {
         display: none;
     }
 
-    p.author {
+    &__author {
         position: absolute;
         top: 50%;
         right: 5%;

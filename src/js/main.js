@@ -8,9 +8,9 @@ const lastSection = document.querySelector('.navbar__nav-item:last-child a')
 const mobileNav = document.querySelector('.navbar__burger-btn-box')
 const desktopNav = document.querySelector('.navbar__links-box')
 
-const showMorePicturesBtn = document.querySelector('.show-gallery-btn')
-const hiddenPictures = document.querySelectorAll('.gallery-picture')
-const footerYear = document.querySelector('.footer-year')
+const showMorePicturesBtn = document.querySelector('.gallery__show-all-btn')
+const hiddenPictures = document.querySelectorAll('.gallery__picture')
+const footerYear = document.querySelector('.footer__year')
 
 let root = document.documentElement;
 let navHeight

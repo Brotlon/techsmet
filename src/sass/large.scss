@@ -1,8 +1,3 @@
-$green-color: rgb(119, 170, 119);
-$gray-color: rgb(169, 169, 169);
-
-
-
 html {
     scroll-padding-top: 51px;
 }
@@ -14,7 +9,7 @@ html {
 
 
 
-// HEADER
+// =======================  HEADER  =======================
 
 .header {
     background-position: 55% 20% !important;
@@ -26,7 +21,7 @@ html {
 
 
 
-// NAWIGACJA
+// =======================  NAWIGACJA  =======================
 
 .navbar {
     &__burger-btn-box {
@@ -60,7 +55,7 @@ html {
 
 
 
-// MAIN - USŁUGI
+// =======================  MAIN - USŁUGI  =======================
 
 .services {
     &__offer-box {
@@ -72,22 +67,6 @@ html {
 
 
 
-.subsection-heading--mobile {
-    display: none;
-}
-
-.subsection-heading--desktop {
-    display: block;
-    margin-bottom: 1.2rem;
-    font-size: 3rem;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, .15);
-    word-spacing: 8px;
-}
-
-.services-img {
-    width: 100%;
-}
-
 // MAIN - USŁUGI - OBRÓBKA SKRAWANIEM
 // MAIN - USŁUGI - SPRAWANIE
 // MAIN - USŁUGI - POZOSTAŁE
@@ -95,18 +74,32 @@ html {
 .machining,
 .welding,
 .others {
-    .wrapper {
+    &__wrapper {
         flex-direction: row;
         width: 920px;
+    }
 
-        .subsection-box {
-            width: 50%;
+    &__heading {
+        &--mobile {
+            display: none;
         }
 
-        .box-text {
-            padding-top: 0;
-            padding-left: 4rem;
+        &--desktop {
+            display: block;
+            margin-bottom: 1.2rem;
+            font-size: 3rem;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, .15);
+            word-spacing: 8px;
         }
+    }
+
+    &__box {
+        width: 50%;
+    }
+
+    &__box-right {
+        padding-top: 0;
+        padding-left: 4rem;
     }
 }
 
@@ -116,22 +109,24 @@ html {
         border-bottom: 1px solid #ddd;
     }
 
-    .subsection-box:first-of-type {
-        max-height: 260px;
-        overflow: hidden;
+    &__box {
+        &:first-of-type {
+            max-height: 260px;
+            overflow: hidden;
+        }
     }
 }
 
 
 
-// MAIN - FIRMA
+// =======================  MAIN - O FIRMIE  =======================
 
 .business {
     .container {
         background-image: url('../img/business_1920.jpg');
     }
 
-    .wrapper {
+    &__wrapper {
         padding: 4rem 4rem 3rem;
         width: 70%;
         max-width: 920px;
@@ -144,20 +139,20 @@ html {
 
 
 
-// MAIN - PARK MASZYNOWY
+// =======================  MAIN - PARK MASZYNOWY  =======================
 
 .machine-park {
     .container {
         padding-top: 6rem;
     }
 
-    .wrapper {
+    &__wrapper {
         width: 70%;
         max-width: 920px;
+    }
 
-        table {
-            font-size: 1.6rem;
-        }
+    &__table {
+        font-size: 1.6rem;
     }
 }
 
@@ -181,7 +176,7 @@ html {
     }
 
     .gallery {
-        .wrapper {
+        &__wrapper {
             max-width: 1500px;
         }
     }
